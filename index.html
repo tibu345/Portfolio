@@ -475,13 +475,26 @@
                                     <i class="fab fa-github"></i>
                                     <span>GitHub</span>
                                 </a>
-                                <a class="social-link"
-                                   href="https://mail.google.com/mail/?view=cm&fs=1&to=harbs4678@gmail.com&su=Hello%20Sami&body=Hi%20Sami%2C%0A%0A"
-                                   target="_blank" rel="noopener"
-                                   aria-label="Email">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </a>
+                             <a class="social-link" id="email-link" target="_blank" rel="noopener" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+    <span>Email</span>
+</a>
+
+<script>
+    // Spam-safe email setup
+    const user = "harbs4678";
+    const domain = "gmail.com";
+    const subject = "Hello Sami";
+    const body = "Hi Sami,";
+
+    const emailLink = document.getElementById("email-link");
+    emailLink.href = "mailto:" + user + "@" + domain +
+                     "?subject=" + encodeURIComponent(subject) +
+                     "&body=" + encodeURIComponent(body);
+
+    // Optional: update visible text to be obfuscated
+    emailLink.querySelector("span").textContent = user + " [at] " + domain.replace(".", " [dot] ");
+</script>
                             </div>
                         </div>
                         <div class="connect-card preferences">

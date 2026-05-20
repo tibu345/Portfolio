@@ -24,8 +24,17 @@ import kernelImg from '../assets/kernel.png';
 import samLibrariesImg from '../assets/sam-libraries.png';
 import headerImg from '../assets/header.png';
 import wasteProjImg from '../assets/waste proj.png';
+import docucaptionImg from '../assets/Docucaption.png';
 
 export const FEATURED_PROJECTS: Project[] = [
+  {
+    title: "Docucaption",
+    description: "Word document automation platform for academic and professional writing. Detects figures and tables in DOCX files, generates editable captions, and exports corrected Word documents with native Microsoft Word fields.",
+    tags: ["Word Automation", "DOCX", "Academic Tool", "Productivity"],
+    image: docucaptionImg,
+    impact: "Automated the tedious process of captioning and cross-referencing in academic and professional documents.",
+    featured: true
+  },
   {
     title: "Smart Waste Monitoring System",
     description: "A computer vision pipeline using YOLO to detect garbage trucks and waste bags. Integrates sensor data to optimize municipal collection routes and reduce illegal dumping.",

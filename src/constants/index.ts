@@ -25,15 +25,15 @@ import samLibrariesImg from '../assets/sam-libraries.png';
 import headerImg from '../assets/header.png';
 import wasteProjImg from '../assets/waste proj.png';
 import docucaptionImg from '../assets/Docucaption.png';
+import cedarHeightsImg from '../assets/cedar-heights.jpg';
 
 export const FEATURED_PROJECTS: Project[] = [
   {
     title: "Cedar Heights",
     description: "Premium React, Vite, and Tailwind real estate landing page concept for construction and property development pitches. Designed to present residences, location value, amenities, galleries, inquiries, and site visit booking in a polished single-page experience.",
     tags: ["React", "Vite", "Tailwind", "Real Estate"],
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800&h=600",
+    image: cedarHeightsImg,
     github: "https://tibu345.github.io/cedar-heights/",
-    demo: "https://tibu345.github.io/cedar-heights/",
     impact: "Created a high-end property development website concept for presenting residential projects and capturing buyer inquiries.",
     featured: true
   },

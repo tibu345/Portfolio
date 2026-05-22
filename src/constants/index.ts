@@ -21,6 +21,16 @@ import samLibrariesImg from '../assets/sam-libraries.png';
 
 export const FEATURED_PROJECTS: Project[] = [
   {
+    title: "Cedar Heights",
+    description: "Premium React, Vite, and Tailwind real estate landing page concept for construction and property development pitches. Designed to present residences, location value, amenities, galleries, inquiries, and site visit booking in a polished single-page experience.",
+    tags: ["React", "Vite", "Tailwind", "Real Estate"],
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800&h=600",
+    github: "https://tibu345.github.io/cedar-heights/",
+    demo: "https://tibu345.github.io/cedar-heights/",
+    impact: "Created a high-end property development website concept for presenting residential projects and capturing buyer inquiries.",
+    featured: true
+  },
+  {
     title: "ISTIDLAL",
     description: "Built a browse-first educational platform for science and technology discovery that turns curated YouTube content into structured topic exploration.",
     tags: ["Next.js", "TypeScript", "Prisma", "SQLite"],

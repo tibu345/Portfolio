@@ -28,6 +28,16 @@ import docucaptionImg from '../assets/Docucaption.png';
 
 export const FEATURED_PROJECTS: Project[] = [
   {
+    title: "Cedar Heights",
+    description: "Premium React, Vite, and Tailwind real estate landing page concept for construction and property development pitches. Designed to present residences, location value, amenities, galleries, inquiries, and site visit booking in a polished single-page experience.",
+    tags: ["React", "Vite", "Tailwind", "Real Estate"],
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800&h=600",
+    github: "https://tibu345.github.io/cedar-heights/",
+    demo: "https://tibu345.github.io/cedar-heights/",
+    impact: "Created a high-end property development website concept for presenting residential projects and capturing buyer inquiries.",
+    featured: true
+  },
+  {
     title: "Docucaption",
     description: "Word document automation platform for academic and professional writing. Detects figures and tables in DOCX files, generates editable captions, and exports corrected Word documents with native Microsoft Word fields.",
     tags: ["Word Automation", "DOCX", "Academic Tool", "Productivity"],

@@ -42,6 +42,7 @@ export const FEATURED_PROJECTS: Project[] = [
     description: "Word document automation platform for academic and professional writing. Detects figures and tables in DOCX files, generates editable captions, and exports corrected Word documents with native Microsoft Word fields.",
     tags: ["Word Automation", "DOCX", "Academic Tool", "Productivity"],
     image: docucaptionImg,
+    github: "https://tibu345.github.io/DocuCaption-Pro/",
     impact: "Automated the tedious process of captioning and cross-referencing in academic and professional documents.",
     featured: true
   },

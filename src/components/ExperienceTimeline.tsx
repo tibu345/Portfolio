@@ -5,8 +5,14 @@ interface TimelineItem {
   organization: string;
   period: string;
   description: string[];
-  type: 'work' | 'education';
+  type: 'work' | 'education' | 'volunteer';
 }
+
+const typeStyles: Record<TimelineItem['type'], string> = {
+  work: 'border-primary/20 text-primary bg-primary/5',
+  education: 'border-blue-500/20 text-blue-400 bg-blue-500/5',
+  volunteer: 'border-emerald-500/20 text-emerald-400 bg-emerald-500/5',
+};
 
 export default function ExperienceTimeline({ items }: { items: TimelineItem[] }) {
   return (
@@ -29,7 +35,7 @@ export default function ExperienceTimeline({ items }: { items: TimelineItem[] })
           <div className="w-[calc(100%-3.5rem)] md:w-[calc(50%-2.5rem)] glass p-6 md:p-8 rounded-2xl md:rounded-[2.5rem] shadow-3xl border border-white/5 group-hover:border-primary/20 group-hover:bg-white/[0.08] transition-all duration-700">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
               <time className="font-serif italic text-[10px] md:text-[11px] font-bold text-primary uppercase tracking-[0.2em] md:tracking-[0.3em]">{item.period}</time>
-              <span className={`text-[8px] md:text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${item.type === 'work' ? 'border-primary/20 text-primary bg-primary/5' : 'border-blue-500/20 text-blue-400 bg-blue-500/5'}`}>
+              <span className={`text-[8px] md:text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${typeStyles[item.type]}`}>
                 {item.type}
               </span>
             </div>

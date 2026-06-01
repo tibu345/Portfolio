@@ -23,7 +23,7 @@ export interface Experience {
   organization: string;
   period: string;
   description: string[];
-  type: 'work' | 'education';
+  type: 'work' | 'education' | 'volunteer';
 }
 
 export interface Language {

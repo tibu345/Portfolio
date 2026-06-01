@@ -140,6 +140,17 @@ export const EXPERIENCE: Experience[] = [
     type: "education"
   },
   {
+    title: "Volunteer",
+    organization: "Makassed Philanthropic Association, Beirut",
+    period: "Apr 2020 - Jan 2021",
+    description: [
+      "Participated in community-focused volunteering initiatives supporting social and humanitarian activities.",
+      "Developed teamwork, communication, and organizational skills in a collaborative environment.",
+      "Contributed to initiatives aimed at supporting local communities and social well-being."
+    ],
+    type: "volunteer"
+  },
+  {
     title: "After-school Intern",
     organization: "TUMO Beirut",
     period: "Oct 2019 - Jan 2020",

@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Sami Harb — Portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio built with React 19, Vite, Tailwind CSS 4 and Motion. Deployed to GitHub Pages: https://tibu345.github.io/Portfolio/
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/043a2053-3553-49a5-aee8-2739bc45bde4
+**Prerequisites:** Node.js 20+
 
-## Run Locally
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run lint     # type-check
+npm run build    # production build in dist/
+```
 
-**Prerequisites:**  Node.js
+## Editing content
 
+All content lives in [`src/data/`](src/data/):
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `profile.ts` — name, contact details, social links, resume URL, nav items
+- `projects.ts` — featured and other projects
+- `experience.ts` — timeline entries
+- `skills.ts` — skills, languages, strengths, services
+
+## Structure
+
+```
+src/
+  components/
+    layout/    Navbar, Footer, scroll progress, back-to-top, cursor
+    sections/  One component per page section
+    ui/        Shared primitives (Section, SectionHeader, Reveal, Button)
+  data/        Site content
+  hooks/       Reusable hooks
+  lib/         Utilities and shared motion variants
+  types/       Shared TypeScript types
+```

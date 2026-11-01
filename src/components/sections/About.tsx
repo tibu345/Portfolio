@@ -78,7 +78,7 @@ export default function About() {
         viewport={inViewOnce}
         className="card mx-auto mt-3 max-w-6xl border-primary/15 bg-primary/[0.04] p-5 font-serif text-lg italic leading-relaxed text-foreground/80 sm:mt-4 sm:p-7 sm:text-xl lg:text-2xl"
       >
-        “I am looking for engineering internships where I can contribute across backend development, infrastructure-minded
+        “I am looking for engineering roles where I can contribute across backend development, infrastructure-minded
         problem solving, technically rigorous product work, and community-oriented technology initiatives.”
       </motion.blockquote>
     </Section>

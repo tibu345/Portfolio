@@ -10,8 +10,8 @@ export const PROFILE = {
   location: 'Beirut, Lebanon',
   graduation: 'Fall 2026',
   focus: 'IT Systems, ML',
-  availability: 'Internship-ready',
-  status: 'Active for Summer 2026 internships',
+  availability: 'Open to opportunities',
+  status: 'Open to work',
 };
 
 /**
